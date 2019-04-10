@@ -1,0 +1,76 @@
+@media only screen and (max-width: 900px){
+    body{
+        font-size: 12px;
+    }
+    .container{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    nav li{
+        display: inline-flexbox;            
+    }
+
+    div > p#info-filme{
+        padding-top: 10px;  
+        font-size: 13px;
+        /* margin-bottom: 70px;   */
+    }
+    .sinopse{
+        line-height: .5em;
+    }    
+    .detalhes-filme{
+        height: auto;
+        margin-bottom: 0;
+        padding: 0;        
+    }
+
+    #titulo-filme{
+        
+        font-size: 25px;
+    }
+
+    #img-principal{
+        width: 200px;
+        height: 303px;
+    }
+    p{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 18px;
+    }    
+    .options ul{
+        width: 100%;
+    }
+    video{
+        width: 520px;
+        height: 340px;
+    }
+    .elenco-atores figure{
+        margin-bottom: 12px;
+        float: none;
+    }
+
+    .options img{
+        width: 100px;
+        height: 55px;
+        border-radius: 2px;
+    }
+
+    figcaption {
+        font-size: 14px;
+    }
+
+    .img-full{
+        margin-top: 35px;
+    }
+
+    .img-full img{
+        width: 470px;
+    }
+    .overlay{
+        display: none;
+    }
+
+}

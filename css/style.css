@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    font-family: 'Roboto','sans-serif';  
+    box-sizing: border-box;   
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgb(233, 231, 231);
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+h2{
+    color:darkslategrey;
+}
+
+/* CSS - navbar e menu da página */
+nav{    
+    background-color: #424242;
+}
+
+nav li{    
+    display: inline-block;
+}
+
+nav ul li{    
+    padding: 20px 50px 20px 50px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+nav > ul{
+   font-size: 0;
+   text-align: right;    
+   list-style: none; 
+}
+
+nav > ul >li{
+    list-style-type: none;
+    font-size: 14px;
+}
+
+nav > ul > li{
+    background-color: gray;
+}
+
+
+nav > ul li:hover{
+    margin: 0px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+nav > ul > li:hover a{
+    color: darkslategrey;
+}
+
+/* section de informações comuns e imagem do filme */
+
+div > p#info-filme{
+    padding-top: 50px;    
+}
+#info-filme > button{
+    margin-top: 20px;
+    padding: 5px 30px;
+    border-radius: 5px;
+    background-color: #848484;
+}
+#info-filme > button > a{
+    text-decoration: none;
+    font-size: 16px;
+    color:white;
+}
+
+#info-filme > button:hover{
+    background-color: #424242;
+    color:#BDBDBD;
+}
+
+#titulo-filme{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 50px;    
+    font-size: 30px;
+    color: #271e1e;
+}
+
+#titulo-filme > small{
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+#img-principal{   
+    float: left;
+    margin-left: 0px;
+    margin-right: 25px;
+    border-radius: 2px;
+    width: 350px;
+    height: 500px;
+    border: 2px solid darkslategrey;
+}
+
+.detalhes-filme{
+    font-size: 16px;
+    line-height: 2.5em;
+    height: 500px;
+    margin-bottom: 25px;
+}
+
+.detalhes-filme strong{
+    color: darkgray;
+    padding-right: 10px;
+}
+
+/* sinopse do filme  */
+.sinopse > h2{    
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.sinopse > p{
+    text-align: justify;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 2em;
+}
+
+/* principais atores (elenco) */
+
+.elenco{
+    margin-right: 20px;
+}
+
+.elenco > h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.elenco-atores{
+    margin-left: 20px;
+    margin-top: 20px;    
+    text-align: center;
+}
+
+.elenco-atores>figure{
+    display: inline-block;    
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.elenco-atores > figure > img{
+    border-radius: 10px;
+    width: 200px;
+    height: 260px;   
+    border: 2px solid darkred; 
+}
+
+.elenco figcaption{
+    color: #808080;
+}
+
+#trailer{
+    text-align: center;
+}
+
+video{
+    width: 640px;
+    height: 480px;
+}
+
+.imagens{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.options{
+    position: relative;
+    float: left;
+    width: 200px;  
+    margin-top: 30px;    
+}
+
+.options > ul > li{
+    list-style-type: none;
+    margin-bottom: 2px;    
+}
+
+.options li{
+    cursor: pointer;
+}
+
+.options img{
+    width: 160px;
+    height: 95px;
+    border-radius: 2px;
+}
+
+.img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container-thumbnails{
+    position: relative;
+    max-width: 300px;;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-thumbnails button{
+    border: none;
+    cursor: pointer;
+}
+
+.container-thumbnails:hover .overlay{
+    opacity: 1;
+}
+
+.imageAnchor:focus img{
+    border: 2px solid darkred;
+}
+
+.img-full{
+    position: relative;
+    left: 0px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.img-full img{
+    width: 800px;
+    height: auto;
+}
+
+.group:before, .group:after{
+    content: "";
+    display: table;
+}
+.group:after{
+    clear: both;
+}
+.group{
+    zoom: 1;
+}
+
+#figcaption-full-img{
+    font-size: 14px;
+    text-align: center;
+}
+
+.div-footer{    
+    padding: 1em;    
+    background-color: #808080;
+}
+
+.footer-inner{
+    font-size: 14px; 
+    text-align: center; 
+    padding: 10px;
+}
+
+.footer-inner a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer-inner a:hover{
+    color: darkslategray;
+}
+
+.footer-inner a > img{
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+
+.footer-btn-voltar{        
+    float: right;
+    z-index: 10;
+    bottom: 0;
+}
+
+.footer-btn-voltar a{    
+    bottom: 0;
+    margin-right: 30px;
+    padding-right: 28px;
+    padding-left: 28px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #4c4c54;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    opacity: .8;
+    text-decoration: none;
+}
