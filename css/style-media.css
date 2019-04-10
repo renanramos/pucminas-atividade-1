@@ -7,10 +7,6 @@
         margin-left: 0;
     }
 
-    nav li{
-        display: inline-flexbox;            
-    }
-
     div > p#info-filme{
         padding-top: 10px;  
         font-size: 13px;
